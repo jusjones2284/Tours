@@ -21,9 +21,7 @@ const Tour = ({name,id, image, info, price, removedTour}) => {
           >
             {readMore ? ' show less ': 'read more'}
           </button>
-          
           </p>
-         
           <button
           type='button'
           className='btn btn-block 
