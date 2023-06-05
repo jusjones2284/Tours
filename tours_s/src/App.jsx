@@ -8,6 +8,13 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [tours, setTours] = useState([])
 
+  const removedTour = (id) =>{
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours)
+    
+    console.log("right button clicked");
+  }
+
   const fetchTours = async()=>{
         setIsLoading(true);
         try {
@@ -36,7 +43,9 @@ const App = () => {
 
   return <main>
 
-    <Tours tours={tours}/>
+    <Tours tours={tours}
+    removedTour={removedTour}
+    />
   </main>
 };
 export default App;
