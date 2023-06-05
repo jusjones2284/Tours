@@ -12,7 +12,7 @@ const App = () => {
     const newTours = tours.filter((tour) => tour.id !== id);
     setTours(newTours)
     
-    console.log("right button clicked");
+    // console.log("right button clicked");
   }
 
   const fetchTours = async()=>{
