@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Tour = () => {
+const Tour = ({name, image, info, price}) => {
   return (
-    <div>Tour</div>
+    <div>Tourss</div>
   )
 }
 
