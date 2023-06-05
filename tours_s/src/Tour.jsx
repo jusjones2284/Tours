@@ -13,9 +13,12 @@ const Tour = ({name,id, image, info, price, removedTour}) => {
           <h5>{name}</h5>
           <p>{info}</p>
           <button
+          type='button'
+          className='btn btn-block 
+          delete-btn'
           onClick={()=> removedTour(id)}
           >
-            delete
+            not interested
 
           </button>
         </div>
